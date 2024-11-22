@@ -124,6 +124,12 @@ def evaluate_model(model, X_test, y_test, category_names):
 
 
 def save_model(model, model_filepath):
+
+""" Save a machine learning model to a file using pickle. 
+Args: model (object): The machine learning model to be saved. 
+model_filepath (str): The file path where the model will be saved. 
+Returns: None 
+"""
     # Save the model to a pickle file
     with open(model_filepath, 'wb') as file:
         pickle.dump(model, file)
