@@ -1,5 +1,5 @@
 # Project Description
-This project analyzes disaster data from Appen(opens in a new tab) (formerly Figure 8) and uses that to build a model that classifies messages into 36 different categories. The model is deployed as a flask web app which accepts input (disaster messages) from a user and returns the appropriate categories for that message.
+This project analyzes disaster data from Appen (formerly Figure 8) and uses that to build a model that classifies messages into 36 different categories. The model is deployed as a flask web app which accepts input (disaster messages) from a user and returns the appropriate categories for that message.
 
 # File Structure
 There are 3 python files to be executed. 
