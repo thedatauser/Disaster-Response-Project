@@ -1,7 +1,16 @@
-# Project Description
-This project analyzes disaster data from Appen (formerly Figure 8) and uses that to build a model that classifies messages into 36 different categories. The model is deployed as a flask web app which accepts input (disaster messages) from a user and returns the appropriate categories for that message.
+## Udacity Disaster Response Pipeline Project
+This project analyzes disaster data from Appen (formerly Figure 8) and uses that to build a model that classifies messages into 36 different categories. <br> The model is deployed as a flask web app which accepts input (disaster messages) from a user and returns the appropriate categories for that message.
 
-# File Structure
+
+## Table of Contents
+
+1. [File Structure](#filestructure)
+2. [Execution](#execution)
+3. [Results](#results)
+4. [Acknowledgements](#acknowledgements)
+
+
+## File Structure<a name="filestructure"></a>
 There are 3 python files to be executed. 
 -The first file pre-process the data and saves to a sqlite database. 
 -The second file loads the data, build a classification model, evaluates the model and saves into a pickle file
@@ -28,7 +37,7 @@ The file structure and the commands to run are shown below
 - README.md 
 
 
-# Execution
+## Execution<a name="execution"></a>
 To run files in this project,
 - create a DisasterResponse Folder then clone the repo files into it.
 - From the command line, execute the following commands (ensure you are in the DisasterResponse folder dir):
@@ -36,6 +45,9 @@ To run files in this project,
   - python models/train_classifier.py data/DisasterResponse.db models/final_model.pkl
   - python app/run.py 
 
-# Author and Acknowledgements
-- Author: Kikelomo Obayemi
-- Acknowledgements: Appen, Udacity
+## Results<a name="results"></a>
+
+## Acknowledgements<a name="acknowledgements"></a>
+Author: Kike Obayemi <br>
+Udacity: for the training and guidance <br>
+[Appen](https://www.appen.com/): for the datasets
