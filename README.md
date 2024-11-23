@@ -47,8 +47,7 @@ To run files in this project,
 
 ## Results<a name="results"></a>
 ![webapp](https://github.com/user-attachments/assets/4616d951-19de-42f6-8f99-bfc82daf871f)
-![Barchart](https://github.com/user-attachments/assets/7f1b92b0-752f-4e24-ad9a-4ec1d9add9ca)
-![Wordcloud](https://github.com/user-attachments/assets/e82ba19a-9fa6-45b9-a5ba-53de59ac3052)
+<br>
 ![modeloutput](https://github.com/user-attachments/assets/e2f065bf-0426-4ca5-9446-d7ad04a5c95e)
 
 
