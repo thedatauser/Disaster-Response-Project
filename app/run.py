@@ -36,7 +36,7 @@ engine = create_engine(f'sqlite:///{database_filepath}')
 df = pd.read_sql_table('MessagesCategory', con=engine)
 
 # load model
-model = joblib.load("models/rfmodel.pkl")
+model = joblib.load("models/final_model.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model

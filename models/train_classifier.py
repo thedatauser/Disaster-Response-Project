@@ -72,17 +72,18 @@ def build_model():
                               with the best found parameters.
     """
     pipeline = Pipeline([        
-                ('vect', CountVectorizer(tokenizer=tokenize)),
+                ('vect', CountVectorizer(tokenizer=tokenize, token_pattern=None)),
                 ('tfidf', TfidfTransformer()),
-                ('clf', MultiOutputClassifier(RandomForestClassifier(random_state=42)))
+                ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
     
     parameters = {
             'clf__estimator__n_estimators': [50,100,200],        
             'clf__estimator__min_samples_split': [2, 5, 10]
         }
-
-    cv = GridSearchCV(pipeline, param_grid=parameters, cv=3, scoring='accuracy', n_jobs=-1)
+    
+    
+    cv = GridSearchCV(pipeline, param_grid=parameters, cv=3,  n_jobs=-1, verbose=3)
 
     return cv
     
@@ -125,16 +126,16 @@ def evaluate_model(model, X_test, y_test, category_names):
 
 def save_model(model, model_filepath):
 
-""" Save a machine learning model to a file using pickle. 
-Args: model (object): The machine learning model to be saved. 
-model_filepath (str): The file path where the model will be saved. 
-Returns: None 
-"""
+    """ Save a machine learning model to a file using pickle. 
+    Args: model (object): The machine learning model to be saved. 
+    model_filepath (str): The file path where the model will be saved. 
+    Returns: None 
+    """
     # Save the model to a pickle file
     with open(model_filepath, 'wb') as file:
         pickle.dump(model, file)
 
-print("Model saved as final_model.pkl")
+    print("Model saved as final_model.pkl")
 
 
 def main():

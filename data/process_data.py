@@ -68,7 +68,10 @@ def clean_data(df):
     # drop duplicates
     df_no_duplicates = df_new.drop_duplicates(subset='id')
 
-    return df_no_duplicates
+    # Fill missing values with 0
+    df_filled = df_no_duplicates.fillna(0)
+
+    return df_filled
 
 
 def save_data(df, database_filename):
