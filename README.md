@@ -30,12 +30,12 @@ The file structure and the commands to run are shown below
 
 # Execution
 To run files in this project,
-create a DisasterResponse Folder then clone the repo files into it.
-From the command line, execute the following commands (ensure you are in the DisasterResponse folder dir):
-python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db 
-python models/train_classifier.py data/DisasterResponse.db models/final_model.pkl
-python app/run.py 
+-create a DisasterResponse Folder then clone the repo files into it.
+-From the command line, execute the following commands (ensure you are in the DisasterResponse folder dir):
+  -python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db 
+  -python models/train_classifier.py data/DisasterResponse.db models/final_model.pkl
+  -python app/run.py 
 
 # Author and Acknowledgements
-Author - Kikelomo Obayemi
-Acknowledgements: Appen, Udacity
+-Author - Kikelomo Obayemi
+-Acknowledgements: Appen, Udacity
